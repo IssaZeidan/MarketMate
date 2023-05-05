@@ -1,0 +1,214 @@
+{
+  "products": [
+    {
+      "name": "Carrots",
+      "price": 1.99,
+      "description": "Fresh, organic carrots.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Carrots",
+      "category": "vegetables"
+    },
+    {
+      "name": "Broccoli",
+      "price": 2.49,
+      "description": "Tender broccoli florets.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Broccoli",
+      "category": "vegetables"
+    },
+    {
+      "name": "Spinach",
+      "price": 1.99,
+      "description": "Nutrient-packed spinach leaves.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Spinach",
+      "category": "vegetables"
+    },
+    {
+      "name": "Tomatoes",
+      "price": 2.99,
+      "description": "Fresh, juicy vine-ripened tomatoes.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Tomatoes",
+      "category": "vegetables"
+    },
+    {
+      "name": "Potatoes",
+      "price": 1.49,
+      "description": "Versatile and delicious potatoes.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Potatoes",
+      "category": "vegetables"
+    },
+    {
+      "name": "Apples",
+      "price": 1.99,
+      "description": "Crisp and sweet apples.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Apples",
+      "category": "fruits"
+    },
+    {
+      "name": "Bananas",
+      "price": 0.99,
+      "description": "Healthy and tasty bananas.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Bananas",
+      "category": "fruits"
+    },
+    {
+      "name": "Oranges",
+      "price": 1.49,
+      "description": "Juicy and refreshing oranges.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Oranges",
+      "category": "fruits"
+    },
+    {
+      "name": "Grapes",
+      "price": 3.99,
+      "description": "Sweet and flavorful grapes.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Grapes",
+      "category": "fruits"
+    },
+    {
+      "name": "Pineapple",
+      "price": 2.99,
+      "description": "Tropical and juicy pineapple.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Pineapple",
+      "category": "fruits"
+    },
+    {
+      "name": "Beef",
+      "price": 8.99,
+      "description": "Premium beef cuts.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Beef",
+      "category": "meats"
+    },
+    {
+      "name": "Chicken",
+      "price": 6.99,
+      "description": "Tender and juicy chicken.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Chicken",
+      "category": "meats"
+    },
+    {
+      "name": "Pork",
+      "price": 7.49,
+      "description": "Flavorful and versatile pork.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Pork",
+      "category": "meats"
+    },
+    {
+      "name": "Salmon",
+      "price": 12.99,
+      "description": "Fresh and healthy salmon fillets.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Salmon",
+      "category": "meats"
+    },
+    {
+      "name": "Shrimp",
+      "price": 9.99,
+      "description": "Tasty and easy-to-cook shrimp.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Shrimp",
+      "category": "meats"
+    },
+    {
+      "name": "Milk",
+      "price": 2.99,
+      "description": "Fresh and creamy milk.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Milk",
+      "category": "dairy"
+    },
+    {
+      "name": "Cheese",
+      "price": 4.99,
+      "description": "Delicious and versatile cheese.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Cheese",
+      "category": "dairy"
+    },
+    {
+      "name": "Yogurt",
+      "price": 1.99,
+      "description": "Healthy and flavorful yogurt.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Yogurt",
+      "category": "dairy"
+    },
+    {
+      "name": "Butter",
+      "price": 3.49,
+      "description": "Rich and creamy butter.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Butter",
+      "category": "dairy"
+    },
+    {
+      "name": "Eggs",
+      "price": 2.49,
+      "description": "Fresh and nutritious eggs.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Eggs",
+      "category": "dairy"
+    },
+    {
+      "name": "Bread",
+      "price": 2.99,
+      "description": "Freshly baked bread.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Bread",
+      "category": "bakery"
+    },
+    {
+      "name": "Bagels",
+      "price": 4.49,
+      "description": "Soft and chewy bagels.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Bagels",
+      "category": "bakery"
+    },
+    {
+      "name": "Croissants",
+      "price": 3.99,
+      "description": "Flaky and buttery croissants.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Croissants",
+      "category": "bakery"
+    },
+    {
+      "name": "Donuts",
+      "price": 1.99,
+      "description": "Sweet and indulgent donuts.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Donuts",
+      "category": "bakery"
+    },
+    {
+      "name": "Cakes",
+      "price": 19.99,
+      "description": "Decadent and delicious cakes.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Cakes",
+      "category": "bakery"
+    },
+    {
+      "name": "Ice Cream",
+      "price": 4.99,
+      "description": "Creamy and refreshing ice cream.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Ice+Cream",
+      "category": "frozen"
+    },
+    {
+      "name": "Frozen Vegetables",
+      "price": 2.99,
+      "description": "Convenient and healthy frozen vegetables.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Frozen+Vegetables",
+      "category": "frozen"
+    },
+    {
+      "name": "Frozen Fruits",
+      "price": 3.99,
+      "description": "Healthy and tasty frozen fruits.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Frozen+Fruits",
+      "category": "frozen"
+    },
+    {
+      "name": "Frozen Pizza",
+      "price": 5.99,
+      "description": "Delicious and easy-to-cook frozen pizza.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Frozen+Pizza",
+      "category": "frozen"
+    },
+    {
+      "name": "Frozen Dinners",
+      "price": 4.49,
+      "description": "Convenient and tasty frozen dinners.",
+      "image": "https://dummyimage.com/300x300/000/fff&text=Frozen+Dinners",
+      "category": "frozen"
+    }
+  ]
+}
