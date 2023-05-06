@@ -1,8 +1,14 @@
+import Categories from "../components/Categories/Categories";
+import Discounts from "../components/Discounts/Discounts";
+import Slider from "../components/Slider/Slider";
+
 const Landing = () => {
     return ( 
-        <h1 className="text-5xl font-bold">
-      Landing
-    </h1>
+      <>
+        <Slider />
+        <Categories />
+        <Discounts />
+      </>
      );
 }
  

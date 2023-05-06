@@ -4,11 +4,12 @@ import { AiFillMail } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import market_mate_logo from './image/market_mate_logo.png'
 import { GiPaperBagOpen } from "react-icons/gi";
+import { Link } from "react-router-dom";
 function Header() {
     return (
-            <header aria-label="Site Header" className="bg-white">
+            <header aria-label="Site Header" className=" bg-white w-100 shadow-md">
                 <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-                    <div className="flex h-40 items-center justify-between">
+                    <div className="flex h-20 items-center justify-between">
                         <div className="md:flex md:items-center md:gap-12">
                             <a className="block text-teal-600" href="/">
                             <img src={market_mate_logo} className="w-40" alt="Logo"/>
@@ -17,19 +18,19 @@ function Header() {
 
                         <div className="hidden md:block">
                             <nav aria-label="Site Nav">
-                                <ul className="flex items-center gap-6 text-sm">
+                                <ul className="flex items-center gap-6 text-md">
                                     <li>
-                                        <a className="text-black transition hover:text-gray-500/75" href="/">
+                                        <Link to ="/">
                                         <AiFillHome className="text-green-500 xl:inline-block mx-2.5 lg:block w-5 h-5"/>
                                             Home
-                                        </a>
+                                            </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-black transition hover:text-gray-500/75" href="/">
+                                        <Link to="Products">
                                         <GiPaperBagOpen className="text-green-500 xl:inline-block mx-2.5 lg:block w-5 h-5"/>
                                             Products
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
