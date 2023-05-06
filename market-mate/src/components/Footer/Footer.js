@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                     <div>
                         <div className="flex justify-start text-teal-600 sm:justify-start">
-                            <img src={market_mate_logo} alt='logo' />
+                            <img src={market_mate_logo} className="w-40" alt='logo' />
                         </div>
                     </div>
                     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
