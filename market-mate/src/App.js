@@ -5,8 +5,8 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Landing from './pages/Landing';
 import Login from './pages/Login';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
