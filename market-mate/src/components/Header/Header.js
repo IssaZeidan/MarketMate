@@ -1,9 +1,9 @@
 import { BsFillCartFill } from "react-icons/bs";
+import { AiFillHome } from "react-icons/ai";
+import { AiFillMail } from "react-icons/ai";
+import { BsFillInfoCircleFill } from "react-icons/bs";
 import market_mate_logo from './image/market_mate_logo.png'
-import grocery from './image/grocery.png'
-import Vector from './image/Vector.png'
-import information from './image/information.png'
-import letter from './image/letter.png'
+import { GiPaperBagOpen } from "react-icons/gi";
 function Header() {
     return (
             <header aria-label="Site Header" className="bg-white">
@@ -11,37 +11,37 @@ function Header() {
                     <div className="flex h-40 items-center justify-between">
                         <div className="md:flex md:items-center md:gap-12">
                             <a className="block text-teal-600" href="/">
-                            <img src={market_mate_logo} alt="Logo"/>
+                            <img src={market_mate_logo} className="w-40" alt="Logo"/>
                             </a>
                         </div>
 
-                        <div className="hidden md:block mt-28">
+                        <div className="hidden md:block">
                             <nav aria-label="Site Nav">
                                 <ul className="flex items-center gap-6 text-sm">
                                     <li>
                                         <a className="text-black transition hover:text-gray-500/75" href="/">
-                                        <img className="xl:inline-block mx-2.5 lg:block" src={Vector} alt="grocery"/>
+                                        <AiFillHome className="text-green-500 xl:inline-block mx-2.5 lg:block w-5 h-5"/>
                                             Home
                                         </a>
                                     </li>
 
                                     <li>
                                         <a className="text-black transition hover:text-gray-500/75" href="/">
-                                        <img className="xl:inline-block mx-2.5 lg:block" src={grocery} alt="grocery"/>
+                                        <GiPaperBagOpen className="text-green-500 xl:inline-block mx-2.5 lg:block w-5 h-5"/>
                                             Products
                                         </a>
                                     </li>
 
                                     <li>
                                         <a className="text-black transition hover:text-gray-500/75" href="/">
-                                        <img className="xl:inline-block mx-2.5 lg:block" src={letter} alt="grocery"/>
+                                        <AiFillMail className="text-green-500 xl:inline-block mx-2.5 lg:block w-5 h-5"/>
                                         contact
                                         </a>
                                     </li>
 
                                     <li>
                                         <a className="text-black transition hover:text-gray-500/75" href="/">
-                                        <img className="xl:inline-block mx-2.5 lg:block" src={information} alt="grocery"/>
+                                        <BsFillInfoCircleFill className="text-green-500 xl:inline-block mx-2.5 lg:block w-5 h-5"/>
                                             About
                                         </a>
                                     </li>
@@ -57,8 +57,8 @@ function Header() {
                                 </a>
 
                                 <div className="hidden sm:flex">
-                                    <a className="rounded-md px-2 py-2.5 text-sm font-medium text-teal-600" href="/">
-                                        <BsFillCartFill />
+                                    <a className="rounded-md px-2 py-2.5 text-sm font-medium text-green-500" href="/">
+                                        <BsFillCartFill  className="w-6 h-6"/>
                                     </a>
                                 </div>
                             </div>
