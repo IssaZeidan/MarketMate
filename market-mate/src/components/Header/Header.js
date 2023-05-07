@@ -1,4 +1,4 @@
-import { BsFillCartFill } from "react-icons/bs";
+import { BsFillCartFill, BsFillSearchHeartFill } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
 import { AiFillMail } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
@@ -67,6 +67,17 @@ function Header() {
                     Frozen
                   </Link>
                 </li>
+
+
+                <li>
+                <Link to='Search'>
+                    <BsFillSearchHeartFill className="text-green-500 xl:inline-block mx-2.5 lg:block w-5 h-5" />
+                    Search
+                  </Link>
+                </li>
+
+
+                
 
                 <li>
                   <Link to="About">

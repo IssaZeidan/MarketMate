@@ -13,6 +13,7 @@ import Fruits from './components/P-Categories/Fruits';
 import Meats from './components/P-Categories/Meats';
 import Bakery from './components/P-Categories/Bakery';
 import Frozen from './components/P-Categories/Frozen';
+import Search from './components/P-Categories/Search';
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='Meats' element={<Meats/>}/>
           <Route path='Bakery' element={<Bakery/>}/>
           <Route path='Frozen' element={<Frozen/>}/>
+          <Route path='Search' element={<Search/>}/>
           <Route path="About" element={<About/>} />
           <Route path="Contact" element={<Contact/>} />
           <Route path="Login" element={<Login/>} />
