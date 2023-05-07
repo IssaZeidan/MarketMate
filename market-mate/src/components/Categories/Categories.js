@@ -26,7 +26,7 @@ const Categories = () => {
                   <p className="mt-2 text-sm text-gray-300">
                   fresh vegetables that are sourced from local farms whenever possible.
                   </p>
-                  <Link to="Products">
+                  <Link to="Vegetables">
                   <button className="px-4 py-2 mt-4 text-sm font-medium text-white bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none focus:bg-green-600">
                     Shop Now
                   </button>
@@ -51,7 +51,7 @@ const Categories = () => {
                   <p className="mt-2 text-sm text-gray-300">
                   fresh Fruits that are sourced from local farms whenever possible.
                   </p>
-                  <Link to="Products">
+                  <Link to="Fruits">
                   <button className="px-4 py-2 mt-4 text-sm font-medium text-white bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none focus:bg-green-600">
                     Shop Now
                   </button>
@@ -76,7 +76,7 @@ const Categories = () => {
                   <p className="mt-2 text-sm text-gray-300">
                   Our meat department is dedicated to providing our customers with the freshest, highest quality meats available.
                   </p>
-                  <Link to="Products">
+                  <Link to="Meats">
                   <button className="px-4 py-2 mt-4 text-sm font-medium text-white bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none focus:bg-green-600">
                     Shop Now
                   </button>
@@ -101,7 +101,7 @@ const Categories = () => {
                   <p className="mt-2 text-sm text-gray-300">
                   Our dairy section is stocked with a wide variety of fresh dairy products that are sourced from local farms and suppliers.
                   </p>
-                  <Link to="Products">
+                  <Link to="Dairy">
                   <button className="px-4 py-2 mt-4 text-sm font-medium text-white bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none focus:bg-green-600">
                     Shop Now
                   </button>
@@ -126,7 +126,7 @@ const Categories = () => {
                   <p className="mt-2 text-sm text-gray-300">
                   Our bakery section is dedicated to providing our customers with the freshest and most delicious baked goods available.
                   </p>
-                  <Link to="Products">
+                  <Link to="Bakery">
                   <button className="px-4 py-2 mt-4 text-sm font-medium text-white bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none focus:bg-green-600">
                     Shop Now
                   </button>
@@ -151,7 +151,7 @@ const Categories = () => {
                   <p className="mt-2 text-sm text-gray-300">
                   Our frozen section is stocked with a variety of high-quality frozen foods that are perfect for quick and easy meals or snacks.
                   </p>
-                  <Link to="Products">
+                  <Link to="Frozen">
                   <button className="px-4 py-2 mt-4 text-sm font-medium text-white bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none focus:bg-green-600">
                     Shop Now
                   </button>
