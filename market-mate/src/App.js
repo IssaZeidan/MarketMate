@@ -7,6 +7,10 @@ import Landing from './pages/Landing';
 import Login from './pages/Login';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import './components/ContactAbout/ConAbout.css' 
+
+
 
 function App() {
   return (
