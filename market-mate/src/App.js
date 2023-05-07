@@ -14,6 +14,7 @@ import Meats from './components/P-Categories/Meats';
 import Bakery from './components/P-Categories/Bakery';
 import Frozen from './components/P-Categories/Frozen';
 import Search from './components/P-Categories/Search';
+import Dairy from './components/P-Categories/Dairy';
 
 
 
@@ -27,6 +28,7 @@ function App() {
           <Route path='Products' element={<Products/>}/> 
           <Route path='Vegetables' element={<Vegetables/>}/>
           <Route path='Fruits' element={<Fruits/>}/>
+          <Route path='Dairy' element={<Dairy/>}/>
           <Route path='Meats' element={<Meats/>}/>
           <Route path='Bakery' element={<Bakery/>}/>
           <Route path='Frozen' element={<Frozen/>}/>
