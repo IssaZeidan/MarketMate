@@ -5,10 +5,14 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Landing from './pages/Landing';
 import Login from './pages/Login';
-import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './components/ContactAbout/ConAbout.css' 
+import Vegetables from './components/P-Categories/Vegetables';
+import Header from './components/Header/Header';
+import Fruits from './components/P-Categories/Fruits';
+import Meats from './components/P-Categories/Meats';
+import Bakery from './components/P-Categories/Bakery';
+import Frozen from './components/P-Categories/Frozen';
 
 
 
@@ -19,7 +23,12 @@ function App() {
       <Header/>
         <Routes>
           <Route path="/" element={<Landing/>} />
-          <Route path="Products" element={<Products/>} />
+          <Route path='Products' element={<Products/>}/> 
+          <Route path='Vegetables' element={<Vegetables/>}/>
+          <Route path='Fruits' element={<Fruits/>}/>
+          <Route path='Meats' element={<Meats/>}/>
+          <Route path='Bakery' element={<Bakery/>}/>
+          <Route path='Frozen' element={<Frozen/>}/>
           <Route path="About" element={<About/>} />
           <Route path="Contact" element={<Contact/>} />
           <Route path="Login" element={<Login/>} />

@@ -28,7 +28,7 @@ const Discounts = () => {
         <div className="w-64 bg-white border border-gray-200 rounded-md shadow-sm dark:bg-gray-800 dark:border-gray-700 p-2 mx-4">
           <img className="rounded-t-md w-full" src={d.image} alt="" />
           <div class="p-2">
-            <h5 className="mb-1 text-base font-semibold tracking-tight text-gray-900 dark:text-white">
+            <h5 className="mb-1 text-base font-semibold tracking-tight text-gray-900 dark:text-black">
               {d.name}
             </h5>
             <p className="mb-2 text-xs text-gray-700 dark:text-gray-400">
