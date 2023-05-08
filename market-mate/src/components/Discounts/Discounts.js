@@ -1,23 +1,22 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import { useContext, useEffect, useState } from "react";
+import { CartContext, ProductContext } from "../../App";
 
 const Discounts = () => {
 
-    const [discounts, setDiscounts] = useState([]);
+    
+  const { data } = useContext(ProductContext);
     const [ten, setTen] = useState([]);
+    const { cart, setCart } = useContext(CartContext);
 
     useEffect(() => {
-        axios
-          .get("http://localhost:3031/products")
-          .then((res) => {
-            setDiscounts(res.data);
-            setTen(discounts.slice(0, 10));
-          })
-          .catch((error) => console.log(error));
-      });
-      function handleClick(name, price){
-        console.log(name + " " + price);
-      }
+          setTen(data.slice(0, 10));
+    });
+
+    const handleAddToCart = (product) => {
+      setCart([...cart, product]);
+    };
+
 
   return (
     <>
@@ -41,9 +40,9 @@ const Discounts = () => {
                 ${d.price}
               </p>
               <a
-                href="#"
+                onClick={() => handleAddToCart(d)}
                 className="inline-block px-2 py-1 text-xs font-medium text-center text-white bg-amber-400 rounded-md"
-                onClick={() => handleClick(d.name, d.price)}>
+                >
                 Add to Cart
               </a>
             </div>
