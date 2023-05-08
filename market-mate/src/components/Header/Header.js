@@ -93,7 +93,7 @@ function Header() {
 
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
-              <Link to='Login'
+              <Link to='LoginPage'
                 className="rounded-md bg-black px-5 py-2.5 text-sm font-medium text-white shadow"
               >
                 Login
