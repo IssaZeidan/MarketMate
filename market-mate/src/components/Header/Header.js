@@ -98,12 +98,11 @@ function Header() {
 
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
-              <a
+              <Link to='Login'
                 className="rounded-md bg-black px-5 py-2.5 text-sm font-medium text-white shadow"
-                href="/"
               >
                 Login
-              </a>
+              </Link>
 
               <div className="hidden sm:flex">
                 <a
