@@ -1,18 +1,13 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useState } from "react";
+import { ProductContext } from "../../App";
 
 const Search = () => {
-  const [data, setData] = useState([]);
+  
+  
+  const { data } = useContext(ProductContext);
+  
   const [searchQuery, setSearchQuery] = useState("");
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:3031/products")
-      .then((res) => {
-        setData(res.data);
-      })
-      .catch((error) => console.log(error));
-  }, []);
 
   const handleSearch = (event) => {
     setSearchQuery(event.target.value);
@@ -21,7 +16,9 @@ const Search = () => {
   const filteredData = data.filter((item) =>
     item.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
-
+  function handleClick(name, price){
+    console.log(name + " " + price);
+  }
   return (
     <>
       <form className="flex items-center">
@@ -81,6 +78,7 @@ const Search = () => {
                 <a
                   href="#"
                   className="inline-block px-2 py-1 text-xs font-medium text-center text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  onClick={() => handleClick(d.name, d.price)}
                 >
                   Add to Cart
                 </a>
