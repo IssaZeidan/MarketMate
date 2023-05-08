@@ -1,22 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import Jumbotron from "../Jumbotron";
-import axios from "axios";
+import { ProductContext } from "../../App";
 
 const Frozen = () => {
 
-    const [data, setData] = useState([]);
-    const [frozen, setFrozen] = useState([]);
+  const { data } = useContext(ProductContext);
+  
+  const frozen = data.filter((product)=> product.category === "frozen");
 
-
-    useEffect(() => {
-        axios
-          .get("http://localhost:3031/products")
-          .then((res) => {
-            setData(res.data);
-            setFrozen(data.filter((d) => d.category === "frozen"));
-          })
-          .catch((error) => console.log(error));
-      });
     return ( 
         <>
         <Jumbotron />

@@ -1,22 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import Jumbotron from "../Jumbotron";
-import axios from "axios";
+import { ProductContext } from "../../App";
 
 const Bakery = () => {
 
-    const [data, setData] = useState([]);
-    const [bakery, setBakery] = useState([]);
+  const { data } = useContext(ProductContext);
+  
+  const bakery = data.filter((product)=> product.category === "bakery");
 
-
-    useEffect(() => {
-        axios
-          .get("http://localhost:3031/products")
-          .then((res) => {
-            setData(res.data);
-            setBakery(data.filter((d) => d.category === "bakery"));
-          })
-          .catch((error) => console.log(error));
-      });
     return ( 
         <>
         <Jumbotron />
