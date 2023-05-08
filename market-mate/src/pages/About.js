@@ -178,16 +178,16 @@ const About = () => {
                                     <h4>Issam Addi</h4>
                                     <span>Full Stack Developer</span>
                                     <div className="social">
-                                        <a href="/">
+                                        <a href="https://www.linkedin.com/in/issam-addi-09148a267/">
                                             <RiProfileFill />
                                         </a>
                                         <a href="https://github.com/Issam-Addi">
                                             <RiGithubFill />
                                         </a>
-                                        <a href="https://wa.me/962?text=Hello">
+                                        <a href="https://wa.me/962786992500?text=Hello">
                                             <RiWhatsappFill />
                                         </a>
-                                        <a href="/">
+                                        <a href="https://issam-addi.github.io/My-protfolio/">
                                             <RiLinkedinBoxFill />
                                         </a>
                                     </div>
@@ -215,16 +215,16 @@ const About = () => {
                                     <h4>Saad Zireeni</h4>
                                     <span>Full Stack Developer</span>
                                     <div className="social">
-                                        <a href="/">
+                                        <a href="https://saad-zireeni.github.io/Portfolio//">
                                             <RiProfileFill />
                                         </a>
                                         <a href="https://github.com/saad-zireeni">
                                             <RiGithubFill />
                                         </a>
-                                        <a href="https://wa.me/962?text=Hello">
+                                        <a href="https://wa.me/962797967092?text=Hello">
                                             <RiWhatsappFill />
                                         </a>
-                                        <a href="/">
+                                        <a href="https://www.linkedin.com/in/saad-zireeni/">
                                             <RiLinkedinBoxFill />
                                         </a>
                                     </div>
