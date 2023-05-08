@@ -1,6 +1,8 @@
 
 import React from 'react';
 import MyImg2 from "../components/ContactAbout/img/MyImg2.png";
+import { RiProfileFill, RiGithubFill, RiWhatsappFill, RiLinkedinBoxFill } from "react-icons/ri";
+
 
 
 const About = () => {
@@ -34,6 +36,206 @@ const About = () => {
             </p>
          
             </p>
+
+            {/* Team */}
+            <section id="team" className="team section-bg">
+                <div className="container" data-aos="fade-up">
+                    <div className="section-title">
+                        <br/>                        <br/>
+
+                  <  h2 className="mb-3 ">Our Team</h2>
+                        <br/>
+                    </div>
+                    <div className="row">
+                        <div
+                            className="col-lg-4"
+                            data-aos="zoom-in"
+                            data-aos-delay={100}
+                            style={{ marginBottom: "5%" }}
+                        >
+                            <div className="member d-flex align-items-start">
+                                {/* <div className="pic">
+                                    <img
+                                      src={MyImg2} 
+                                        className="img-fluid"
+                                        alt=""
+                                        width="100%"
+                                        height="100%"
+                                    />
+                                </div> */}
+                                <div className="member-info">
+                                    <h4>Farah Almasri</h4>
+                                    <span>Full Stack Developer</span>
+                                    <div className="social">
+                                        <a href="https://falmasri98.github.io/Portfolio/">
+                                            <RiProfileFill />
+                                        </a>
+                                        <a href="https://github.com/falmasri98">
+                                            <RiGithubFill />
+                                        </a>
+                                        <a href="https://wa.me/962799010691?text=Hello">
+                                            <RiWhatsappFill />
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/farah-almasri/">
+                                            <RiLinkedinBoxFill />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* 2 */}
+                        <div
+                            className="col-lg-4"
+                            data-aos="zoom-in"
+                            data-aos-delay={100}
+                            style={{ marginBottom: "5%" }}
+                        >
+                            <div className="member d-flex align-items-start">
+                                {/* <div className="pic">
+                                    <img
+                                      src={MyImg2} 
+                                        className="img-fluid"
+                                        alt=""
+                                        width="100%"
+                                        height="100%"
+                                    />
+                                </div> */}
+                                <div className="member-info">
+                                    <h4>Issa Zeidan </h4>
+                                    <span>Full Stack Developer</span>
+                                    <div className="social">
+                                        <a href="https://issazeidan.github.io/Portfolio/">
+                                            <RiProfileFill />
+                                        </a>
+                                        <a href="https://github.com/IssaZeidan">
+                                            <RiGithubFill />
+                                        </a>
+                                        <a href="https://wa.me/962777627435?text=Hello">
+                                            <RiWhatsappFill />
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/issa-zeidan-599790166/">
+                                            <RiLinkedinBoxFill />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/*  */}
+                        <div
+                            className="col-lg-4"
+                            data-aos="zoom-in"
+                            data-aos-delay={100}
+                            style={{ marginBottom: "5%" }}
+                        >
+                            <div className="member d-flex align-items-start">
+                                {/* <div className="pic">
+                                    <img
+                                      src={MyImg2} 
+                                        className="img-fluid"
+                                        alt=""
+                                        width="100%"
+                                        height="100%"
+                                    />
+                                </div> */}
+                                <div className="member-info">
+                                    <h4>Mahmoud Hassan</h4>
+                                    <span>Full Stack Developer</span>
+                                    <div className="social">
+                                        <a href="https://mahmoud-hassan98.github.io/Portfolio/">
+                                            <RiProfileFill />
+                                        </a>
+                                        <a href="https://github.com/Mahmoud-Hassan98">
+                                            <RiGithubFill />
+                                        </a>
+                                        <a href="https://wa.me/962781158939?text=Hello">
+                                            <RiWhatsappFill />
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/mahmoud-hassan-jo/">
+                                            <RiLinkedinBoxFill />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/*  */}
+                        <div
+                            className="col-lg-4"
+                            data-aos="zoom-in"
+                            data-aos-delay={100}
+                            style={{ marginBottom: "5%" }}
+                        >
+                            <div className="member d-flex align-items-start">
+                                {/* <div className="pic">
+                                    <img
+                                      src={MyImg2} 
+                                        className="img-fluid"
+                                        alt=""
+                                        width="100%"
+                                        height="100%"
+                                    />
+                                </div> */}
+                                <div className="member-info">
+                                    <h4>Issam Addi</h4>
+                                    <span>Full Stack Developer</span>
+                                    <div className="social">
+                                        <a href="https://www.linkedin.com/in/issam-addi-09148a267/">
+                                            <RiProfileFill />
+                                        </a>
+                                        <a href="https://github.com/Issam-Addi">
+                                            <RiGithubFill />
+                                        </a>
+                                        <a href="https://wa.me/962786992500?text=Hello">
+                                            <RiWhatsappFill />
+                                        </a>
+                                        <a href="https://issam-addi.github.io/My-protfolio/">
+                                            <RiLinkedinBoxFill />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/*  */}
+                        <div
+                            className="col-lg-4"
+                            data-aos="zoom-in"
+                            data-aos-delay={100}
+                            style={{ marginBottom: "5%" }}
+                        >
+                            <div className="member d-flex align-items-start">
+                                {/* <div className="pic">
+                                    <img
+                                      src={MyImg2} 
+                                        className="img-fluid"
+                                        alt=""
+                                        width="100%"
+                                        height="100%"
+                                    />
+                                </div> */}
+                                <div className="member-info">
+                                    <h4>Saad Zireeni</h4>
+                                    <span>Full Stack Developer</span>
+                                    <div className="social">
+                                        <a href="https://saad-zireeni.github.io/Portfolio//">
+                                            <RiProfileFill />
+                                        </a>
+                                        <a href="https://github.com/saad-zireeni">
+                                            <RiGithubFill />
+                                        </a>
+                                        <a href="https://wa.me/962797967092?text=Hello">
+                                            <RiWhatsappFill />
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/saad-zireeni/">
+                                            <RiLinkedinBoxFill />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/*  */}
+                    </div>
+                </div>
+            </section>
+
   
         </div>
         // </div>
