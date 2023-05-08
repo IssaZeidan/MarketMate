@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 const Categories = () => {
   return (
     <>
-
       <h1 className="text-3xl font-bold text-black text-center mt-5">
         What do we offer ?
       </h1>
@@ -11,12 +10,11 @@ const Categories = () => {
       <div className="flex flex-wrap my-10 mx-20">
 
         <div className="w-full sm:w-1/2 md:w-1/3 p-4">
-          {<div className="relative bg-gray-400 rounded-lg shadow-lg overflow-hidden">
+          <div className="relative rounded-lg overflow-hidden">
             <img
               className="w-full h-64 object-cover object-center"
               src="https://cdn.britannica.com/17/196817-050-6A15DAC3/vegetables.jpg"
-              alt="vegetables"
-            />
+              alt="vegetables"/>
             <div className="absolute inset-0 bg-black opacity-70"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
@@ -33,10 +31,11 @@ const Categories = () => {
                 </Link>
               </div>
             </div>
-          </div>}
+          </div>
         </div>
+
         <div className="w-full sm:w-1/2 md:w-1/3 p-4">
-          {<div className="relative bg-gray-400 rounded-lg shadow-lg overflow-hidden">
+          <div className="relative bg-gray-400 rounded-lg shadow-lg overflow-hidden">
             <img
               className="w-full h-64 object-cover object-center"
               src="https://hips.hearstapps.com/hmg-prod/images/assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpg?crop=0.982xw:0.736xh;0,0.189xh&resize=1200:*"
@@ -58,10 +57,11 @@ const Categories = () => {
                 </Link>
               </div>
             </div>
-          </div>}
+          </div>
         </div>
+
         <div className="w-full sm:w-1/2 md:w-1/3 p-4">
-          {<div className="relative bg-gray-400 rounded-lg shadow-lg overflow-hidden">
+          <div className="relative bg-gray-400 rounded-lg shadow-lg overflow-hidden">
             <img
               className="w-full h-64 object-cover object-center"
               src="https://facts.net/wp-content/uploads/2022/06/different-types-of-meat.jpg"
@@ -83,10 +83,11 @@ const Categories = () => {
                 </Link>
               </div>
             </div>
-          </div>}
+          </div>
         </div>
+
         <div className="w-full sm:w-1/2 md:w-1/3 p-4">
-          {<div className="relative bg-gray-400 rounded-lg shadow-lg overflow-hidden">
+          <div className="relative bg-gray-400 rounded-lg shadow-lg overflow-hidden">
             <img
               className="w-full h-64 object-cover object-center"
               src="https://domf5oio6qrcr.cloudfront.net/medialibrary/9685/iStock-544807136.jpg"
@@ -108,10 +109,11 @@ const Categories = () => {
                 </Link>
               </div>
             </div>
-          </div>}
+          </div>
         </div>
+
         <div className="w-full sm:w-1/2 md:w-1/3 p-4">
-          {<div className="relative bg-gray-400 rounded-lg shadow-lg overflow-hidden">
+          <div className="relative bg-gray-400 rounded-lg shadow-lg overflow-hidden">
             <img
               className="w-full h-64 object-cover object-center"
               src="https://www.bakingbusiness.com/ext/resources/2019/8/08192019/GlobalTrends.jpg?height=667&t=1566494557&width=1080"
@@ -133,10 +135,10 @@ const Categories = () => {
                 </Link>
               </div>
             </div>
-          </div>}
+          </div>
         </div>
         <div className="w-full sm:w-1/2 md:w-1/3 p-4">
-          {<div className="relative bg-gray-400 rounded-lg shadow-lg overflow-hidden">
+          <div className="relative bg-gray-400 rounded-lg shadow-lg overflow-hidden">
             <img
               className="w-full h-64 object-cover object-center"
               src="https://www.daysoftheyear.com/wp-content/uploads/frozen-food-day-scaled.jpg"
@@ -158,7 +160,7 @@ const Categories = () => {
                 </Link>
               </div>
             </div>
-          </div>}
+          </div>
         </div>
       </div>
     </>

@@ -1,15 +1,12 @@
-import React  from 'react';
+import React from 'react';
 import './login.css'
-// import './sign-in-up.css'
 import GoogleLogin from 'react-google-login';
 import { useEffect, useState } from 'react';
-import { load } from 'gapi-script';
 import FacebookLogin from 'react-facebook-login';
-import { Link, useNavigate } from 'react-router-dom';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 
-export default   function SignInUpForm() {
+export default function SignInUpForm() {
   const navigate = useNavigate('/')
 
   const [isSignUpActive, setIsSignUpActive] = useState(false);
@@ -24,7 +21,6 @@ export default   function SignInUpForm() {
 
   const handleGoogleLoginSuccess = (response) => {
     console.log('Google login success:', response);
-   
   };
 
   const handleGoogleLoginFailure = (error) => {
@@ -33,59 +29,58 @@ export default   function SignInUpForm() {
 
   const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
-    //  localStorage here 
+  //  localStorage here 
 
-    
-const [userData, setUserData] = useState([]);
-const handleSignUpSubmit = (event) => {
-  
-  event.preventDefault();
-  const name = event.target.elements.name.value;
-  const email = event.target.elements.email.value;
-  const password = event.target.elements.password.value;
 
-  const newUser = { name, email, password };
-  setUserData([...userData, newUser]);
-  
-  localStorage.setItem("userData", JSON.stringify([...userData, newUser]));
+  const [userData, setUserData] = useState([]);
+  const handleSignUpSubmit = (event) => {
 
-  // navigate('/')
-  
-  
-}
+    event.preventDefault();
+    const name = event.target.elements.name.value;
+    const email = event.target.elements.email.value;
+    const password = event.target.elements.password.value;
 
-useEffect(() => {
-  const storedData = localStorage.getItem("userData");
-  if (storedData) {
-    setUserData(JSON.parse(storedData));
+    const newUser = { name, email, password };
+    setUserData([...userData, newUser]);
+
+    localStorage.setItem("userData", JSON.stringify([...userData, newUser]));
+
+    // navigate('/')
+
+
   }
-}, []);
-const handleSignInSubmit = (event) => {
-  
 
-  event.preventDefault();
-  const email = event.target.elements.email.value;
-  const password = event.target.elements.password.value;
-
-  for (let i = 0; i < userData.length; i++) {
-    if (userData[i].email === email && userData[i].password === password) {
-      // navigate('/')
-      console.log("Logged in!");
-
-      return;
+  useEffect(() => {
+    const storedData = localStorage.getItem("userData");
+    if (storedData) {
+      setUserData(JSON.parse(storedData));
     }
-  }
-  console.log("Invalid email or password");
- 
-};
+  }, []);
+  const handleSignInSubmit = (event) => {
+
+
+    event.preventDefault();
+    const email = event.target.elements.email.value;
+    const password = event.target.elements.password.value;
+
+    for (let i = 0; i < userData.length; i++) {
+      if (userData[i].email === email && userData[i].password === password) {
+        // navigate('/')
+        console.log("Logged in!");
+
+        return;
+      }
+    }
+    console.log("Invalid email or password");
+  };
 
   return (
-    <>
-      <h2><span className='market'>Market</span> <span className='mate'>Mate</span></h2>
+    <div className='login'>
+      <h2><span className='market'>Market </span><span className='mate'>Mate</span></h2>
       <div className={`container ${isSignUpActive ? 'right-panel-active' : ''}`}>
         <div className="form-container sign-up-container">
-         
-<form  onSubmit={handleSignUpSubmit} >
+
+          <form onSubmit={handleSignUpSubmit} >
 
             <h1>Create Account</h1>
             <div className="social-container">
@@ -95,29 +90,29 @@ const handleSignInSubmit = (event) => {
                 onSuccess={handleGoogleLoginSuccess}
                 onFailure={handleGoogleLoginFailure}
               />
-              <br/> <br/>
+              <br /> <br />
               <FacebookLogin
-              appId="189266677360423"
-              
-              onSuccess={handleGoogleLoginSuccess}
-              onFailure={handleGoogleLoginFailure}
-              callback={handleGoogleLoginSuccess}
-              icon="fa-facebook"
-              cssClass="facebook-button"
-             
-            />
-        
+                appId="189266677360423"
+
+                onSuccess={handleGoogleLoginSuccess}
+                onFailure={handleGoogleLoginFailure}
+                callback={handleGoogleLoginSuccess}
+                // icon="fa-facebook"
+                cssClass="facebook-button"
+
+              />
+
             </div>
             <span>or use your email for registration</span>
-            <input type="text" name="name" placeholder="Name"  required / >
-            <input type="email" name="email" placeholder="Email"  required/>
-            <input type="password" name="password" placeholder="Password" required/>
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="password" name="password" placeholder="Password" required />
 
             <button>Sign Up</button>
           </form>
         </div>
         <div className="form-container sign-in-container">
-          <form  onSubmit={handleSignInSubmit} >
+          <form onSubmit={handleSignInSubmit} >
             <h1>Sign in</h1>
             <div className="social-container">
               <GoogleLogin
@@ -126,22 +121,22 @@ const handleSignInSubmit = (event) => {
                 onSuccess={handleGoogleLoginSuccess}
                 onFailure={handleGoogleLoginFailure}
               />
-              <br/><br/>
+              <br /><br />
               <FacebookLogin
-              appId="189266677360423"
-              
-              onSuccess={handleGoogleLoginSuccess}
-              onFailure={handleGoogleLoginFailure}
-              callback={handleGoogleLoginSuccess}
-              icon="fa-facebook"
-              cssClass="facebook-button"
-            />
+                appId="189266677360423"
+
+                onSuccess={handleGoogleLoginSuccess}
+                onFailure={handleGoogleLoginFailure}
+                callback={handleGoogleLoginSuccess}
+                // icon="fa-facebook"
+                cssClass="facebook-button"
+              />
             </div>
             <span>or use your account</span>
-            <input type="email" name="email"  placeholder="Email"  required/>
-            <input type="password" name="password" placeholder="Password" required/>
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="password" name="password" placeholder="Password" required />
             <a href="#">Forgot your password?</a>
-              <button>Sign In</button>
+            <button>Sign In</button>
           </form>
         </div>
         <div className="overlay-container">
@@ -163,6 +158,6 @@ const handleSignInSubmit = (event) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

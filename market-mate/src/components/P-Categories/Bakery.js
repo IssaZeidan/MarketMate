@@ -25,18 +25,18 @@ const Bakery = () => {
                 alt=""
               />
               <div className="p-2 h-full">
-                <h5 className="mb-1 text-base font-semibold tracking-tight text-gray-900 dark:text-black">
+                <h5 className="mb-1 text-base font-semibold tracking-tight text-black">
                   {d.name}
                 </h5>
-                <p className="mb-2 text-xs text-gray-700 dark:text-gray-400">
+                <p className="mb-2 text-xs text-black">
                   {d.description}
                 </p>
-                <p className="mb-3 font-normal text-xs text-gray-700 dark:text-gray-400">
+                <p className="mb-3 font-normal text-xs text-black">
                   ${d.price}
                 </p>
                 <a
                   href="#"
-                  className="inline-block px-2 py-1 text-xs font-medium text-center text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  className="inline-block px-2 py-1 text-xs font-medium text-center text-white bg-amber-400 rounded-md focus:ring-4 focus:outline-none"
                 >
                   Add to Cart
                 </a>

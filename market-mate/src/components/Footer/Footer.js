@@ -2,6 +2,7 @@ import market_mate_logo from './image/market_mate_logo.png'
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsTelephoneFill } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <footer footer aria-label="Site Footer" >
@@ -14,142 +15,132 @@ const Footer = () => {
                     </div>
                     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
                         <div className="text-left sm:text-left">
-                            <p className="text-lg font-medium text-gray-900">About Us</p>
+                            <p className="text-lg font-medium text-gray-900">Quick links</p>
 
                             <nav aria-label="Footer About Nav" className="mt-8">
                                 <ul className="space-y-4 text-sm">
                                     <li>
-                                        <a
-                                            className="text-black transition hover:text-gray-700/75"
-                                            href="/">
-                                            Company History
-                                        </a>
+                                        <Link to="/"
+                                            className="text-black transition hover:text-gray-700/75">
+                                            Home
+                                            </Link>
                                     </li>
 
                                     <li>
-                                        <a
-                                            className="text-black transition hover:text-gray-700/75"
-                                            href="/">
-                                            Meet the Team
-                                        </a>
+                                    <Link to="products"
+                                            className="text-black transition hover:text-gray-700/75">
+                                            All products
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a
-                                            className="text-black transition hover:text-gray-700/75"
-                                            href="/">
-                                            Employee Handbook
-                                        </a>
+                                        <Link to="About"
+                                            className="text-black transition hover:text-gray-700/75">
+                                            About
+                                            </Link>
                                     </li>
 
                                     <li>
-                                        <a
-                                            className="text-black transition hover:text-gray-700/75"
-                                            href="/">
-                                            Careers
-                                        </a>
+                                        <Link to="Contact"
+                                            className="text-black transition hover:text-gray-700/75">
+                                            Contact
+                                        </Link>
                                     </li>
-                                        <ul className="mt-8 flex justify-start gap-6 sm:justify-start md:gap-8">
-                                            <li>
-                                                <a
-                                                    href="/"
-                                                    rel="noreferrer"
-                                                    target="_blank"
-                                                    className="text-blue-400">
-                                                        <AiFillLinkedin className='h-6 w-6 transition hover:text-teal-700/75'/>
-                                                </a>
-                                            </li>
+                                    <ul className="mt-8 flex justify-start gap-6 sm:justify-start md:gap-8">
+                                        <li>
+                                            <a
+                                                href="/"
+                                                rel="noreferrer"
+                                                target="_blank"
+                                                className="text-blue-400">
+                                                <AiFillLinkedin className='h-6 w-6 transition hover:text-teal-700/75' />
+                                            </a>
+                                        </li>
 
-                                            <li>
-                                                <a
-                                                    href="/"
-                                                    rel="noreferrer"
-                                                    target="_blank"
-                                                    className="text-green-500">
-                                                        <BsTelephoneFill className='h-5 w-5 transition hover:text-teal-700/75'/>
-                                                </a>
-                                            </li>
+                                        <li>
+                                            <a
+                                                href="/"
+                                                rel="noreferrer"
+                                                target="_blank"
+                                                className="text-green-500">
+                                                <BsTelephoneFill className='h-5 w-5 transition hover:text-teal-700/75' />
+                                            </a>
+                                        </li>
 
-                                            <li>
-                                                <a
-                                                    href="/"
-                                                    rel="noreferrer"
-                                                    target="_blank"
-                                                    className="text-red-600">
-                                                        <SiGmail className='h-5 w-5 transition hover:text-teal-700/75' />
-                                                </a>
-                                            </li>
-                                        </ul>
+                                        <li>
+                                            <a
+                                                href="/"
+                                                rel="noreferrer"
+                                                target="_blank"
+                                                className="text-red-600">
+                                                <SiGmail className='h-5 w-5 transition hover:text-teal-700/75' />
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </ul>
                             </nav>
                         </div>
 
                         <div className="text-left sm:text-left">
-                            <p className="text-lg font-medium text-gray-900">Our Services</p>
+                            <p className="text-lg font-medium text-gray-900">Our products</p>
 
                             <nav aria-label="Footer Services Nav" className="mt-8">
                                 <ul className="space-y-4 text-sm">
                                     <li>
-                                        <a
-                                            className="text-black transition hover:text-gray-700/75"
-                                            href="/">
-                                            Web Development
-                                        </a>
+                                        <Link to="Vegetables"
+                                            className="text-black transition hover:text-gray-700/75">
+                                            Vegetables
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a
-                                            className="text-black transition hover:text-gray-700/75"
-                                            href="/">
-                                            Web Design
-                                        </a>
+                                    <Link to= "Fruits"
+                                            className="text-black transition hover:text-gray-700/75">
+                                            Fruits
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a
-                                            className="text-black transition hover:text-gray-700/75"
-                                            href="/">
-                                            Marketing
-                                        </a>
+                                    <Link to= "Meats"
+                                            className="text-black transition hover:text-gray-700/75">
+                                            Meats
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a
-                                            className="text-black transition hover:text-gray-700/75"
-                                            href="/">
-                                            Google Ads
-                                        </a>
+                                    <Link to='Bakery'
+                                            className="text-black transition hover:text-gray-700/75">
+                                            Bakery
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                    <Link to='Frozen'
+                                            className="text-black transition hover:text-gray-700/75">
+                                            Frozen
+                                        </Link>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
                         <div className="text-left sm:text-left w-60">
-                            <p className="text-lg font-medium text-gray-900">Helpful Links</p>
+                            <p className="text-lg font-medium text-gray-900">join us</p>
                             <p className="mt-6 max-w-md leading-relaxed sm:max-w-xs sm:text-left">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-                                consequuntur amet culpa cum itaque neque.
+                                Log in now to be able to enjoy all our services
                             </p>
-                                <form action="" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
-                                    <div>
-                                        <label htmlFor="email" className="sr-only">Email</label>
+                            <form action="" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
 
-                                        <div className="relative">
-                                            <input
-                                                type="email"
-                                                className="w-full rounded-lg border-gray-200 p-2.5 pe-12 text-sm shadow-sm"
-                                                placeholder="Your email" />
-                                        </div>
-                                    </div>
-
-                                    <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between">
+                                    <Link to='Login'>
                                         <button
                                             type="submit"
                                             className="inline-block rounded-lg bg-black px-5 py-2.5 text-sm font-medium text-white">
-                                            Submit
+                                            Login
                                         </button>
-                                    </div>
-                                    
-                                </form>
+                                    </Link>
+                                </div>
+
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -157,7 +148,7 @@ const Footer = () => {
                 <div className="mt-12 pt-6">
                     <div className="flex justify-center">
                         <p className="mt-4 text-sm text-black sm:order-first sm:mt-0">
-                            &copy; 2023 SPG
+                            &copy; 2023 market mate team
                         </p>
                     </div>
                 </div>

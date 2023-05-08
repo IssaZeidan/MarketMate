@@ -1,4 +1,3 @@
-/* img */
 img.mx-auto.d-block {
   width: 27%;
   display: flex;
@@ -17,7 +16,7 @@ img.mx-auto.d-block:hover {
 }
 
 h6.my-4 {
-  color: rgb(202, 53, 53);
+  color:#f59e0b;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -39,11 +38,20 @@ h6.my-4 {
 }
 
 strong {
+  font-size: 1.5em;
   display: contents;
 }
 
+.market {
+  color: #22c55e;
+}
+
+.mate {
+  color: #f59e0b;
+}
+
 h2.mb-3 {
-  color: #80CA2D;
+  color: #22c55e;
   display: flex;
   justify-content: center;
 }
@@ -53,15 +61,15 @@ h6.mb-6 {
   justify-content: center;
   margin-bottom: .2rem;
   text-align: center;
-  color: #666666;
+  font-size: 1em;
+  color: black;
 }
 
-/* p */
 p.my-3 {
   display: block;
   justify-content: center;
   text-align: center;
-  color: #666666;
+  color: black;
   margin: 1rem;
   padding: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -81,17 +89,17 @@ div.mb-3 {
 }
 
 div.mb-4 {
-  /* display: flex; */
   padding: .5rem;
 }
 
 button.btn-danger {
-  /* background-color: #7a398c; */
-
-  color: #edffeb;
-  background-image: linear-gradient(#b2fe5c, #2B2B2D);
+  color: white;
+  height: 2.5rem;
+  align-items: center;
+  background-color: black;
   border: none;
   width: 10rem;
   display: flex;
   justify-content: center;
+  border-radius: 6px;
 }

@@ -1,21 +1,13 @@
 import React from 'react'
-import  { useRef } from 'react';
+import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
 
 const Contact = () => {
   const [formStatus, setFormStatus] = React.useState('Send Message')
-  const formRef = React.useRef(null)
-
-
-
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
-  
-    setFormStatus('Sending...'); 
-  
+    setFormStatus('Sending...');
     emailjs.sendForm(
       'service_tbb3rs7',
       'template_daqbppm',
@@ -25,20 +17,17 @@ const Contact = () => {
       (result) => {
         console.log(result.text);
         console.log("message sent");
-        
-     
         setTimeout(() => {
           form.current.reset();
-          setFormStatus('Send Message'); 
+          setFormStatus('Send Message');
         }, 1500);
       },
       (error) => {
         console.log(error.text);
-        setFormStatus('Send Message'); 
+        setFormStatus('Send Message');
       }
     );
   };
-  
 
   return (
     <div className="container mt-5">
@@ -61,17 +50,14 @@ const Contact = () => {
             id="message"
             placeholder="Enter Your Message!"
             name="message"
-            required
-          />
+            required/>
         </div>
         <div className="d-flex justify-content-center">
-          <button className="btn btn-danger" type="submit" >
+          <button className="btn-danger" type="submit" >
             {formStatus}
           </button>
-          </div>
-  
+        </div>
       </form>
-
     </div>
   )
 }
