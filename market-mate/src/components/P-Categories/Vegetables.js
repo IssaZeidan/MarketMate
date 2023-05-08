@@ -6,7 +6,6 @@ import { CartContext, ProductContext } from "../../App";
 const Vegetables = () => {
 
   const { data } = useContext(ProductContext);
-  const { cart, setCart } = useContext(CartContext);
   
   const vegetables = data.filter((product)=> product.category === "vegetables");
 
@@ -14,9 +13,9 @@ const Vegetables = () => {
     setCart([...cart, product]);
 }
 
-    return ( 
-        <>
-        <Jumbotron />
+  return (
+    <>
+      <Jumbotron />
       <div className="md:container md:mx-auto">
         <div className="flex flex-wrap justify-center -mx-2">
           {vegetables.map((d, i) => (
@@ -41,7 +40,7 @@ const Vegetables = () => {
                   ${d.price}
                 </p>
                 <a
-                  onClick={() => handleAddToCart(d)}
+                  href="#"
                   className="inline-block px-2 py-1 text-xs font-medium text-center text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Add to Cart
@@ -53,7 +52,7 @@ const Vegetables = () => {
         </div>
       </div>
     </>
-     );
+  );
 }
- 
+
 export default Vegetables;

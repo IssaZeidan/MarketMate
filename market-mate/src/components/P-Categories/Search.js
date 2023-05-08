@@ -1,12 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useContext, useState } from "react";
-import { CartContext, ProductContext } from "../../App";
+import { ProductContext } from "../../App";
 
 const Search = () => {
-  
-  
+
+
   const { data } = useContext(ProductContext);
-  const { cart, setCart } = useContext(CartContext);
   
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -18,10 +17,9 @@ const Search = () => {
   const filteredData = data.filter((item) =>
     item.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
-
-  const handleAddToCart = (product) => {
-    setCart([...cart, product]);
-}
+  function handleClick(name, price){
+    console.log(name + " " + price);
+  }
   return (
     <>
       <form className="flex items-center">
@@ -30,28 +28,16 @@ const Search = () => {
         </label>
         <div className="relative w-full">
           <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-            <svg
-              aria-hidden="true"
-              className="w-5 h-5 text-gray-500 dark:text-gray-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
+            <AiOutlineSearch className="h-5 w-5 text-gray-400" />
           </div>
           <input
             type="text"
             id="simple-search"
             onChange={handleSearch}
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 bg-white text-black"
+            className="border border-gray-300  text-sm rounded-lg block w-full pl-10 p-2.5 bg-white text-green-600"
             placeholder="Search"
             required
-          />
+            />
         </div>
       </form>
 
@@ -81,7 +67,7 @@ const Search = () => {
                 <a
                   href="#"
                   className="inline-block px-2 py-1 text-xs font-medium text-center text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                  onClick={() => handleAddToCart(d)}
+                  onClick={() => handleClick(d.name, d.price)}
                 >
                   Add to Cart
                 </a>

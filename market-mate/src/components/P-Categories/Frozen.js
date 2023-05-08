@@ -6,17 +6,12 @@ import { CartContext, ProductContext } from "../../App";
 const Frozen = () => {
 
   const { data } = useContext(ProductContext);
-  const { cart, setCart } = useContext(CartContext);
-
-  const frozen = data.filter((product)=> product.category === "frozen");
   
-  const handleAddToCart = (product) => {
-    setCart([...cart, product]);
-}
+  const frozen = data.filter((product)=> product.category === "frozen");
 
-    return ( 
-        <>
-        <Jumbotron />
+  return (
+    <>
+      <Jumbotron />
       <div className="md:container md:mx-auto">
         <div className="flex flex-wrap justify-center -mx-2">
           {frozen.map((d, i) => (
@@ -41,7 +36,7 @@ const Frozen = () => {
                  ${d.price}
                </p>
                <a
-                 onClick={() => handleAddToCart(d)}
+                 href="#"
                  className="inline-block px-2 py-1 text-xs font-medium text-center text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                >
                  Add to Cart
@@ -53,7 +48,7 @@ const Frozen = () => {
         </div>
       </div>
     </>
-     );
+  );
 }
- 
+
 export default Frozen;
