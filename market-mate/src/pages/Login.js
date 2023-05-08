@@ -1,6 +1,6 @@
 import React  from 'react';
 import './login.css'
-import './sign-in-up.css'
+// import './sign-in-up.css'
 import GoogleLogin from 'react-google-login';
 import { useEffect, useState } from 'react';
 import { load } from 'gapi-script';

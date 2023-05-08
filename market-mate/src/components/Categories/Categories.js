@@ -52,7 +52,7 @@ const Categories = () => {
                   fresh Fruits that are sourced from local farms whenever possible.
                 </p>
                 <Link to="Fruits">
-                <button className="text-sm font-medium mt-4 bg-black text-white px-5 py-2.5 rounded-lg focus:outline-none">
+                  <button className="text-sm font-medium mt-4 bg-black text-white px-5 py-2.5 rounded-lg focus:outline-none">
                     Shop Now
                   </button>
                 </Link>
@@ -77,7 +77,7 @@ const Categories = () => {
                   Our meat department is dedicated to providing our customers with the freshest, highest quality meats available.
                 </p>
                 <Link to="Meats">
-                <button className="text-sm font-medium mt-4 bg-black text-white px-5 py-2.5 rounded-lg focus:outline-none">
+                  <button className="text-sm font-medium mt-4 bg-black text-white px-5 py-2.5 rounded-lg focus:outline-none">
                     Shop Now
                   </button>
                 </Link>
@@ -127,7 +127,7 @@ const Categories = () => {
                   Our bakery section is dedicated to providing our customers with the freshest and most delicious baked goods available.
                 </p>
                 <Link to="Bakery">
-                <button className="text-sm font-medium mt-4 bg-black text-white px-5 py-2.5 rounded-lg focus:outline-none">
+                  <button className="text-sm font-medium mt-4 bg-black text-white px-5 py-2.5 rounded-lg focus:outline-none">
                     Shop Now
                   </button>
                 </Link>
