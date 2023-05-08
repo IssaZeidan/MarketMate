@@ -31,8 +31,7 @@ const All = () => {
                   <p className="mb-3 font-normal text-xs text-black">
                     ${d.price}
                   </p>
-                  <a
-                    href="#"
+                  <a href="#"
                     className="inline-block px-2 py-1 text-xs font-medium text-center text-white bg-amber-400 rounded-md focus:ring-4 focus:outline-none">
                     Add to Cart
                   </a>
