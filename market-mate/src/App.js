@@ -19,9 +19,15 @@ import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
 export const ProductContext = createContext();
+export const CartContext = createContext();
+
+
+  
 
 function App() {
   const [data, setData] = useState([]);
+  const [cart, setCart] = useState([]);
+  
 
   useEffect(() => {
     axios
@@ -36,6 +42,7 @@ function App() {
     <>
       <BrowserRouter>
         <ProductContext.Provider value={{ data }}>
+        <CartContext.Provider value={{ cart, setCart }}>
           <Header />
           <Routes>
             <Route path="/" element={<Landing />} />
@@ -52,6 +59,7 @@ function App() {
             <Route path="LoginPage" element={<Login />} />
           </Routes>
           <Footer />
+          </CartContext.Provider>
         </ProductContext.Provider>
       </BrowserRouter>
     </>
