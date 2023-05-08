@@ -21,13 +21,9 @@ import axios from "axios";
 export const ProductContext = createContext();
 export const CartContext = createContext();
 
-
-  
-
 function App() {
   const [data, setData] = useState([]);
   const [cart, setCart] = useState([]);
-  
 
   useEffect(() => {
     axios
@@ -42,23 +38,23 @@ function App() {
     <>
       <BrowserRouter>
         <ProductContext.Provider value={{ data }}>
-        <CartContext.Provider value={{ cart, setCart }}>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="Products" element={<Products />} />
-            <Route path="Vegetables" element={<Vegetables />} />
-            <Route path="Fruits" element={<Fruits />} />
-            <Route path="Dairy" element={<Dairy />} />
-            <Route path="Meats" element={<Meats />} />
-            <Route path="Bakery" element={<Bakery />} />
-            <Route path="Frozen" element={<Frozen />} />
-            <Route path="Search" element={<Search />} />
-            <Route path="About" element={<About />} />
-            <Route path="Contact" element={<Contact />} />
-            <Route path="LoginPage" element={<Login />} />
-          </Routes>
-          <Footer />
+          <CartContext.Provider value={{ cart, setCart }}>
+            <Header />
+            <Routes>
+              <Route path="/" element={<Landing />} />
+              <Route path="Products" element={<Products />} />
+              <Route path="Vegetables" element={<Vegetables />} />
+              <Route path="Fruits" element={<Fruits />} />
+              <Route path="Dairy" element={<Dairy />} />
+              <Route path="Meats" element={<Meats />} />
+              <Route path="Bakery" element={<Bakery />} />
+              <Route path="Frozen" element={<Frozen />} />
+              <Route path="Search" element={<Search />} />
+              <Route path="About" element={<About />} />
+              <Route path="Contact" element={<Contact />} />
+              <Route path="LoginPage" element={<Login />} />
+            </Routes>
+            <Footer />
           </CartContext.Provider>
         </ProductContext.Provider>
       </BrowserRouter>
