@@ -1,18 +1,13 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useState } from "react";
+import { ProductContext } from "../../App";
 
 const Search = () => {
-  const [data, setData] = useState([]);
+  
+  
+  const { data } = useContext(ProductContext);
+  
   const [searchQuery, setSearchQuery] = useState("");
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:3031/products")
-      .then((res) => {
-        setData(res.data);
-      })
-      .catch((error) => console.log(error));
-  }, []);
 
   const handleSearch = (event) => {
     setSearchQuery(event.target.value);

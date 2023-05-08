@@ -1,24 +1,12 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useContext } from "react";
 import Jumbotron from "../Jumbotron";
+import { ProductContext } from "../../App";
 
 const Vegetables = () => {
 
-    const [data, setData] = useState([]);
-    const [vegetables, setVegetables] = useState([]);
-    const [cart, setCart] = useState([]);
-
-
-    useEffect(() => {
-        axios
-          .get("http://localhost:3031/products")
-          .then((res) => {
-            setData(res.data);
-            setVegetables(data.filter((d) => d.category === "vegetables"));
-          })
-          .catch((error) => console.log(error));
-      });
+  const { data } = useContext(ProductContext);
+  
+  const vegetables = data.filter((product)=> product.category === "vegetables");
 
 
 

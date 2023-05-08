@@ -1,17 +1,10 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useContext } from "react";
+import { ProductContext } from "../../App";
 
 const All = () => {
-  const [data, setData] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:3031/products")
-      .then((res) => {
-        setData(res.data);
-      })
-      .catch((error) => console.log(error));
-  }, []);
+
+  const { data } = useContext(ProductContext);
 
   function handleClick(name, price){
     console.log(name + " " + price);

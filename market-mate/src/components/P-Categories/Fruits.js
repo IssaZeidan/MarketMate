@@ -1,25 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import Jumbotron from "../Jumbotron";
-import axios from "axios";
+import { ProductContext } from "../../App";
 
 const Fruits = () => {
-
-    const [data, setData] = useState([]);
-    const [fruits, setFruits] = useState([]);
-
-
-    useEffect(() => {
-        axios
-          .get("http://localhost:3031/products")
-          .then((res) => {
-            setData(res.data);
-            setFruits(data.filter((d) => d.category === "fruits"));
-          })
-          .catch((error) => console.log(error));
-      });
-      function handleClick(name, price){
-        console.log(name + " " + price);
-      }
+  const { data } = useContext(ProductContext);
+  
+  const fruits = data.filter((product)=> product.category === "fruits");
+    
     return ( 
         <>
         <Jumbotron />
@@ -49,7 +36,6 @@ const Fruits = () => {
               <a
                 href="#"
                 className="inline-block px-2 py-1 text-xs font-medium text-center text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                onClick={() => handleClick(d.name, d.price)}
               >
                 Add to Cart
               </a>

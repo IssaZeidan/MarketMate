@@ -1,25 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import Jumbotron from "../Jumbotron";
-import axios from "axios";
+import { ProductContext } from "../../App";
 
 const Frozen = () => {
 
-    const [data, setData] = useState([]);
-    const [frozen, setFrozen] = useState([]);
+  const { data } = useContext(ProductContext);
+  
+  const frozen = data.filter((product)=> product.category === "frozen");
 
-
-    useEffect(() => {
-        axios
-          .get("http://localhost:3031/products")
-          .then((res) => {
-            setData(res.data);
-            setFrozen(data.filter((d) => d.category === "frozen"));
-          })
-          .catch((error) => console.log(error));
-      });
-      function handleClick(name, price){
-        console.log(name + " " + price);
-      }
     return ( 
         <>
         <Jumbotron />
@@ -49,7 +37,6 @@ const Frozen = () => {
                <a
                  href="#"
                  className="inline-block px-2 py-1 text-xs font-medium text-center text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                 onClick={() => handleClick(d.name, d.price)}
                >
                  Add to Cart
                </a>

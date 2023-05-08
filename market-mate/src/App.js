@@ -15,13 +15,32 @@ import Bakery from './components/P-Categories/Bakery';
 import Frozen from './components/P-Categories/Frozen';
 import Search from './components/P-Categories/Search';
 import Dairy from './components/P-Categories/Dairy';
+import { createContext, useEffect, useState } from 'react';
+import axios from 'axios';
+
+
+
+export const ProductContext = createContext();
 
 
 
 function App() {
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3031/products")
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch((error) => console.log(error));
+  }, []);
+  
   return (
     <>
       <BrowserRouter>
+      <ProductContext.Provider value={{ data }}>
       <Header/>
         <Routes>
           <Route path="/" element={<Landing/>} />
@@ -38,6 +57,7 @@ function App() {
           <Route path="Login" element={<Login/>} />
         </Routes>
         <Footer/>
+        </ProductContext.Provider>
       </BrowserRouter>
     </>
   );
