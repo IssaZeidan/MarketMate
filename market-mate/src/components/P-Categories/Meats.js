@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { ProductContext } from "../../App";
 import Jumbotron from "../Jumbotron";
 
 const Meats = () => {
