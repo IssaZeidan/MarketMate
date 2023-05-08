@@ -1,10 +1,9 @@
-import react from "react";
-import './cart-page/cart_page.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import {MdFacebook} from 'react-icons/md';
-import {AiFillInstagram } from 'react-icons/ai';
-import {FaTwitter } from 'react-icons/fa';
+
+
+
+
 export default function Confirmation()
 
 {

@@ -100,10 +100,10 @@ function Header() {
               </Link>
 
               <div className="hidden sm:flex">
-                <a className="px-2 py-2.5 text-green-500"
+                <Link to="CartPage" className="px-2 py-2.5 text-green-500"
                   href="/">
                   <BsFillCartFill className="w-6 h-6" />
-                </a>
+                </Link>
               </div>
             </div>
 

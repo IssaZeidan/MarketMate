@@ -17,6 +17,7 @@ import Search from "./components/P-Categories/Search";
 import Dairy from "./components/P-Categories/Dairy";
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
+import Cart from "./components/Cart";
 
 export const ProductContext = createContext();
 export const CartContext = createContext();
@@ -52,6 +53,7 @@ function App() {
               <Route path="Search" element={<Search />} />
               <Route path="About" element={<About />} />
               <Route path="Contact" element={<Contact />} />
+              <Route path="CartPage" element={<Cart />} />
               <Route path="LoginPage" element={<Login />} />
             </Routes>
             <Footer />
