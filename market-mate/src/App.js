@@ -4,7 +4,7 @@ import Products from "./pages/Products";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Landing from "./pages/Landing";
-import Login from "./pages/Login";
+import Login from "./pages/LoginPage";
 import Footer from "./components/Footer/Footer";
 import "./components/ContactAbout/ConAbout.css";
 import Vegetables from "./components/P-Categories/Vegetables";
@@ -49,7 +49,7 @@ function App() {
             <Route path="Search" element={<Search />} />
             <Route path="About" element={<About />} />
             <Route path="Contact" element={<Contact />} />
-            <Route path="Login" element={<Login />} />
+            <Route path="LoginPage" element={<Login />} />
           </Routes>
           <Footer />
         </ProductContext.Provider>
