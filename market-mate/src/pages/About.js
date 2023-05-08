@@ -1,6 +1,8 @@
 
 import React from 'react';
 import MyImg2 from "../components/ContactAbout/img/MyImg2.png";
+import { RiProfileFill, RiGithubFill, RiWhatsappFill, RiLinkedinBoxFill } from "react-icons/ri";
+
 
 
 const About = () => {
@@ -31,7 +33,7 @@ const About = () => {
                     We are excited to work with you and earn your ongoing business and support.
                 </p>
             </p>
-
+  
         </div>
     );
 };

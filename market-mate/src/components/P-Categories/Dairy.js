@@ -1,12 +1,19 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useContext } from "react";
 import Jumbotron from "../Jumbotron";
-import { ProductContext } from "../../App";
+import { CartContext, ProductContext } from "../../App";
 
 const Dairy = () => {
 
   const { data } = useContext(ProductContext);
+  const { cart, setCart } = useContext(CartContext);
   
   const dairy = data.filter((product)=> product.category === "dairy");
+  
+
+  const handleAddToCart = (product) => {
+      setCart([...cart, product]);
+  }
 
 
     return ( 
@@ -37,7 +44,7 @@ const Dairy = () => {
                 </p>
                 <a
                   href="#"
-                  className="inline-block px-2 py-1 text-xs font-medium text-center text-white bg-amber-400 rounded-md focus:ring-4 focus:outline-none"
+                  className="inline-block px-2 py-1 text-xs font-medium text-center text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Add to Cart
                 </a>
